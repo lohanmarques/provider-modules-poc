@@ -11,9 +11,9 @@ Pod::Spec.new do |spec|
   spec.license       = { :type => "MIT", :file => "LICENSE" }
   spec.author        = { "Globo Comunicação e Participações S.A" => "https://www.globo.com/" }
         
-  spec.platform      = :ios
   spec.platform      = :ios, "11.0"
   spec.swift_version = '5.0'
   spec.source_files  = "VideoQuality/**/*.{h,m,swift}"
+  spec.exclude_files = "VideoQualityTests/**/*"
 
 end
