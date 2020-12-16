@@ -14,6 +14,6 @@ Pod::Spec.new do |spec|
   spec.platform      = :ios, "11.0"
   spec.swift_version = '5.0'
   spec.source_files  = "VideoQuality/**/*.{h,m,swift}"
-  spec.exclude_files = "VideoQualityTests/**/*"
+  spec.exclude_files = "VideoQuality/VideoQualityTests/**/*"
 
 end
