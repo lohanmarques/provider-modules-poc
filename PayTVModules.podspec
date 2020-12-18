@@ -13,16 +13,15 @@ Pod::Spec.new do |spec|
           
     spec.platform      = :ios, "11.0"
     spec.swift_version = '5.0'
-    spec.ios.deployment_target = '13.0'
 
     spec.subspec 'VideoQuality' do |sp|
-        sp.ios.deployment_target = '13.0'
-        sp.dependency 'VideoQuality'
+        sp.source_files  = "VideoQuality/**/*.{h,m,swift}"
+        sp.exclude_files = "VideoQuality/VideoQualityTests/**/*"
     end
 
     spec.subspec 'Version' do |sp|
-        sp.ios.deployment_target = '13.0'
-        sp.dependency 'Version'
+        sp.source_files  = "Version/**/*.{h,m,swift}"
+        sp.exclude_files = "Version/VersionTests/**/*"
     end
   end
   
