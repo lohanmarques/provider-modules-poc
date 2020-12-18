@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name          = "PayTVModules"
-    spec.version       = "1.0.1"
+    spec.version       = "1.0.3"
     spec.summary       = "PayTVModules"
     spec.description   = <<-DESC
     PayTVModules
