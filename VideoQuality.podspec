@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name          = "VideoQuality"
-  spec.version       = "1.0.1"
+  spec.version       = "1.0.4"
   spec.summary       = "Qualidade do vídeo"
   spec.description   = <<-DESC
   Caso de uso para mudança da qualidade do vídeo

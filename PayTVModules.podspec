@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name          = "PayTVModules"
-    spec.version       = "1.0.3"
+    spec.version       = "1.0.4"
     spec.summary       = "PayTVModules"
     spec.description   = <<-DESC
     PayTVModules
@@ -13,10 +13,14 @@ Pod::Spec.new do |spec|
           
     spec.platform      = :ios, "11.0"
     spec.swift_version = '5.0'
+    spec.ios.deployment_target = '13.0'
 
     spec.subspec 'VideoQuality' do |sp|
-        sp.source_files  = "VideoQuality/**/*.{h,m,swift}"
-        sp.exclude_files = "VideoQuality/VideoQualityTests/**/*"
+        ss.ios.deployment_target = '13.0'
+    end
+
+    spec.subspec 'Version' do |sp|
+        ss.ios.deployment_target = '13.0'
     end
   end
   
