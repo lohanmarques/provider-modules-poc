@@ -16,11 +16,11 @@ Pod::Spec.new do |spec|
     spec.ios.deployment_target = '13.0'
 
     spec.subspec 'VideoQuality' do |sp|
-        ss.ios.deployment_target = '13.0'
+        sp.ios.deployment_target = '13.0'
     end
 
     spec.subspec 'Version' do |sp|
-        ss.ios.deployment_target = '13.0'
+        sp.ios.deployment_target = '13.0'
     end
   end
   
