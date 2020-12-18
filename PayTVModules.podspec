@@ -17,12 +17,12 @@ Pod::Spec.new do |spec|
 
     spec.subspec 'VideoQuality' do |sp|
         sp.ios.deployment_target = '13.0'
-        ss.dependency 'VideoQuality'
+        sp.dependency 'VideoQuality'
     end
 
     spec.subspec 'Version' do |sp|
         sp.ios.deployment_target = '13.0'
-        ss.dependency 'Version'
+        sp.dependency 'Version'
     end
   end
   
