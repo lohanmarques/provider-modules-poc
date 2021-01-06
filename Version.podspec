@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
     spec.name             = "Version"
     spec.version          = "1.0.5"
     spec.summary          = "Version"
-    spec.description      = "VideoQuality Description"
+    spec.description      = "Version Description"
 
     spec.homepage         = "https://github.com/lohanmarques/provider-modules-poc"
     spec.source           = { :git => "https://github.com/lohanmarques/provider-modules-poc.git", :tag => spec.version.to_s }
@@ -15,5 +15,5 @@ Pod::Spec.new do |spec|
     spec.module_name      = spec.name
 
     spec.source_files     = "Version/**/*.{h,m,swift}"
-    spec.exclude_files    = "Version/VideoQualityTests/**/*"
+    spec.exclude_files    = "Version/VersionTests/**/*"
   end
