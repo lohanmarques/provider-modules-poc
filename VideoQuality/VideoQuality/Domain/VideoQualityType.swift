@@ -2,7 +2,7 @@
 
 import Foundation
 
-public enum VideoQualityType: String {
+public enum VideoQualityType: String, CaseIterable {
     case low = "Baixa"
     case medium = "Média"
     case high = "Alta"

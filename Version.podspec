@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-    spec.name             = "VideoQuality"
+    spec.name             = "Version"
     spec.version          = "1.0.5"
-    spec.summary          = "VideoQuality"
+    spec.summary          = "Version"
     spec.description      = "VideoQuality Description"
 
     spec.homepage         = "https://github.com/lohanmarques/provider-modules-poc"
@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
     spec.swift_version    = "5.0"
 
     spec.module_name      = spec.name
-    spec.source_files     = "VideoQuality/**/*.{h,m,swift}"
-    spec.exclude_files    = "VideoQuality/VideoQualityTests/**/*"
+
+    spec.source_files     = "Version/**/*.{h,m,swift}"
+    spec.exclude_files    = "Version/VideoQualityTests/**/*"
   end

@@ -2,7 +2,7 @@
 
 import Foundation
 
-final class VideoQualityInteractor: VideoQualityContractInput {
+public final class VideoQualityInteractor: VideoQualityContractInput {
     
     weak var output: VideoQualityContractOutput?
     let repository: VideoQualityRepository
@@ -16,13 +16,13 @@ final class VideoQualityInteractor: VideoQualityContractInput {
         self.identifier = identifier
     }
     
-    func fetchSelected() -> VideoQualityType {
+    public func fetchSelected() -> VideoQualityType {
         guard let value = repository.fetch(for: makeDefaultsKey()) else { return .automatic }
         
         return VideoQualityType(rawValue: value) ?? .automatic
     }
     
-    func save(type: VideoQualityType) {
+    public func save(type: VideoQualityType) {
         repository.save(value: type.rawValue, for: makeDefaultsKey())
         output?.didChangeVideoQuality(new: type)
     }
